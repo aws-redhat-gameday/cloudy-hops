@@ -1,4 +1,4 @@
-Clumsy Bird
+Flying Hat
 ===========
 
 A MelonJS made "Flappy Bird" clone.
