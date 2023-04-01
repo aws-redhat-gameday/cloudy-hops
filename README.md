@@ -25,6 +25,12 @@ grunt connect
 
 Open your browser at `http://localhost:8001/`
 
+## Build (Minify)
+
+```bash
+grunt
+```
+
 ## Making your customization
 
 See [CUSTOMIZING](https://github.com/ellisonleao/clumsy-bird/blob/master/CUSTOMIZING.md)
