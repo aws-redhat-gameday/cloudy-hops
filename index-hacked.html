@@ -1,61 +1,206 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Flying Hack</title>
-        <link rel="apple-touch-icon-precomposed"
-            href="data/img/touch-icon-iphone.png"/>
-        <link rel="apple-touch-icon-precomposed" sizes="120x120"
-            href="data/img/touch-icon-iphone-retina.png"/>
-        <link rel="shortcut icon" href="data/img/favicon.ico">
-        <meta id="viewport" name="viewport" content="width=device-width,
-            initial-scale=1, maximum-scale=1, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="Flying Hack">
-        <meta charset="UTF-8" />
-        <meta name="description" content="Flying Hack - A Flappy Bird clone
-            using
-            MelonJS"/>
-        <meta name="keywords" content="flappybird, flappy, bird, game, html5,
-            melonjs,clone"/>
-        <meta name="robots" content="index, follow">
-        <meta name="google-site-verification"
-            content="RDZI9SqVaffd48uHfZMv67-YdvviOMe2HuULEYqVgd4" />
-        <meta property="og:image"
-            content="http://ellisonleao.github.io/clumsy-bird/data/img/bg.png"
-            />
-        <meta property="og:title" content="Flying Hat - A Flappy Bird clone
-            using MelonJS"/>
-        <meta property="og:url"
-            content="http://ellisonleao.github.io/clumsy-bird/"/>
-        <meta property="og:site_name" content="Flying Hat - MelonJS"/>
+  <head>
+    <meta charset="utf-8">
+    <title>Flying Hack</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
 
-        <!-- Twitter Card -->
-        <meta name="twitter:hashtag" content="clumsybird" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@ellisonleao" />
-        <meta name="twitter:creator" content="@ellisonleao" />
-        <meta name="twitter:title" content="Flying Hack" />
-        <meta name="twitter:description" content="A Flappy Bird melonJS clone"
-            />
+  <body>
 
-        <!-- Humans -->
-        <link rel="author" href="humans.txt" />
+      <contents>
+        <header>
 
-        <style>
-            .center {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+          <nav class="top-left-section">
+            <div class="The-Y">
+              <a>G</a>
+            </div>
+            <h4 class="clearfix">Flying Hack News</h4>
+            <ul class="top-links">
+              <li class="heading">new</li>
+              <li class="heading">| comments</li>
+              <li class="heading">| show</li>
+              <li class="heading">| ask</li>
+              <li class="heading">| jobs</li>
+              <li class="heading">| submit</li>
+              <li id="1" class="heading">login</li>
+            </ul>
+          </nav>
+
+          <style>
+            html {
+                background-color: #f5f5f5;
             }
-        </style>
-    </head>
+            h4.clearfix {
+                max-width: 200px;
+            }
+            body {
+                font-family: Verdana,Geneva,sans-serif;
+                font-size: 10pt;
+                max-width: 713px;
+                background-color: #f5f5f5;
+            }
+            .The-Y {
+                width:16px;
+                height: 16px;
+                border: 1px #ffffff solid;
+                text-align: center;
+                text-decoration: none;
+                float: left;
+                margin: 3px 5px 0px 3px;
+                color: #ffffff
+            }
+            header {
+                background-color: #ff6900;
+                max-height: 24px;
+                margin-bottom: 10px;
+            }
+            h4 {
+                margin: 0;
+                padding-top: 3px;
+                padding-bottom:2px;
+                font-size: 11pt;
+            }
+            nav.top-left-section {
+                max-width: 705px;
+            }
+            ul.top-links {
+                margin: 3px 0px 0px 0px;
+                padding: 0;
+                float: right;
+            }
+            .clearfix::after {
+                visibility: hidden;
+                display: block;
+                font-size: 0;
+                content: " ";
+                clear: both;
+                height: 0;
+                }
+            .clearfix { display: inline-block; }
+            * html .clearfix { height: 1%; }
+            nav.footer {
+                text-align: center;
+            }
+            li.heading {
+                list-style: none;
+                display: inline-block;
+            }
 
-    <body>
-        <div class="center">
-            <img src="data/img/hacked.jpg" align=center width="20%"/>
-            <p>Your disk may soon be full 😳</p>
-        </div>
 
-    </body>
+
+            /*   ---------     Middle Section    --------*/
+
+            nav.mid-section-1 {
+                counter-reset: mynum;
+                list-style: outside none;
+                text-indent: 5px;
+            }
+            li.numbered:before {
+                list-style-type: none;
+                content: counter(mynum) "."
+                url("https://news.ycombinator.com/grayarrow.gif");
+
+                counter-increment: mynum;
+                font-size: 10pt;
+                color: #828282;
+            }
+            li.numbered::after {
+                color: #828282;
+            }
+            span.site-head {
+                font-size: 8pt;
+                color: #828282;
+                float:right;
+                margin-right: 5px;
+            }
+            p {
+                font-size: 10pt;
+            }
+            .links {
+                font-size: 8pt;
+            }
+            p.sub-text {
+                font-size: 8pt;
+                margin-top: 0px;
+                margin-left: 30px;
+                margin-bottom: 5px;
+                color: #828282;
+            }
+            .clearfix2:after {
+                visibility: hidden;
+                display: block;
+                font-size: 0;
+                content: " ";
+                clear: both;
+                height: 0;
+                }
+            .clearfix2 { display: inline-block; }
+            * html .clearfix2 { height: 1%; }
+            .clearfix2 { display: block; }
+
+            /*      ------------- Bottom Section  ----------     */
+
+            h6 {
+                background-color: #ff6900;
+                max-height: 2px;
+                color: #fff;
+                margin: 0;
+            }
+            p.search {
+                color: #828282;
+            }
+            input {
+                height: 18px;
+                width: 140px;
+            }
+          </style>
+
+        </header>
+
+        <nav class="mid-section-1">
+          <div class="clearfix2">
+                <li class="numbered"><a href="./oscap-report.html">Why Unicorn.Games was hacked and How to Fix It</a></li>
+                <span class="site-head">(The Security Times)</span>
+                <p class="sub-text">1456 points by Obscure.Security 1 hour ago | 205 comments</p>
+                <li class="numbered"><a href="./oscap-report.html">We hacked Flying Hat, the latest Unicorn.Games. See the full report</a></li>
+                <span class="site-head">(The Daily Hack)</span>
+                <p class="sub-text">1171 points by Joke Of The Day 1 hour ago | 21 comments</p>
+                <li class="numbered"><a href="./oscap-report.html">Unicorn.Games is hacked and their security report is published</a></li>
+                <span class="site-head">(Almost Ethical Hacking)</span>
+                <p class="sub-text">829 points by Unicorn.Hacker 1 hour ago | 2 comments</p>
+            </a>
+        </nav>
+        <h6>.</h6>
+        </nav>
+        <center>
+          <nav class="footer">
+            <br/>
+            <img src="data/img/hacked.jpg" align=center width="50%"/>
+
+            <p>Need a Security job done?</p>
+
+
+            <span class="links">
+              <a>Guidelines</a>
+              <a>| FAQ</a>
+              <a>| Support</a>
+              <a>| API</a>
+              <a>| Security</a>
+              <a>| Lists</a>
+              <a>| Bookmarklet</a>
+              <a>| DMCA</a>
+              <a>| Apply to YC</a>
+              <a>| Contact</a>
+            </span>
+
+            <p style="color: #828282">Search:</p4>
+            <input></input>
+            <br></br>
+            <br></br>
+          </nav>
+        </center>
+
+      </contents>
+  </body>
 </html>
