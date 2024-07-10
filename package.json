@@ -1,7 +1,7 @@
 {
   "name": "clumsy-bird",
   "version": "0.1.0",
-  "description": "Flying Hat - A MelonJS port of the famous Flappy Bird game",
+  "description": "Cloudy Hops - A MelonJS port of the famous Flappy Bird game",
   "homepage": "http://ellisonleao.github.io/clumsy-bird/",
   "repository": {
     "type": "git",

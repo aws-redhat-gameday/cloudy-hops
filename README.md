@@ -1,4 +1,4 @@
-# Flying Hat
+# Cloudy Hops
 
 This game is part of the "Cloudy Hops" quest, an [AWS GameDay](https://aws.amazon.com/gameday/) developed by AWS and Red Hat.
 
